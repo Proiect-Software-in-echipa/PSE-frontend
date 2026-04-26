@@ -80,7 +80,6 @@ export function pseToUIItem(t, idGen) {
     contradictedBy:    0,
     text:              t.raw_title ?? `${t.player} → ${t.to_team}`,
     date:              t.transfer_timestamp ?? t.created_at ?? new Date().toISOString(),
-    dateLabel:         formatDatePSE(t.transfer_timestamp ?? t.created_at),
     fromRSS:           false,
     fromDb:            false,
     fromPSE:           true,
